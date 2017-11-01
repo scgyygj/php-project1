@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background: #fff; }
+
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: url("../img/bg.jpg") no-repeat center/cover; }
+
+.header {
+  width: 100%;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.4);
+  border-bottom: 1px solid #65844a; }
+  .header > .touxiang {
+    width: 70px;
+    height: 70px;
+    float: left;
+    border-radius: 50%;
+    margin: 15px 30px; }
+    .header > .touxiang > img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%; }
+  .header > h1 {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    color: #445656;
+    line-height: 100px; }
+  .header > button {
+    float: left;
+    padding: 5px  10px;
+    margin-right: 10px;
+    margin-top: 30px;
+    background: #316794;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 14px;
+    border: none;
+    text-align: center;
+    line-height: 30px; }
+
+.bottom {
+  width: 100%;
+  height: calc(100% - 100px);
+  display: flex; }
+
+.leftnav {
+  width: 200px;
+  height: 100%;
+  padding-top: 20px;
+  background: rgba(255, 255, 255, 0.4);
+  border-right: 1px solid #65844a; }
+  .leftnav > h2 {
+    width: 100%;
+    height: 40px;
+    background: #316794;
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
+    color: #502020;
+    border-bottom: 1px solid #fff;
+    cursor: pointer; }
+  .leftnav > ul {
+    width: 100%;
+    height: auto;
+    display: none; }
+    .leftnav > ul > li {
+      width: 100%;
+      height: 20px;
+      border-bottom: 1px solid #fff;
+      color: #222222;
+      text-align: center;
+      padding: 10px 0px; }
+
+.right {
+  flex-grow: 1;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.9); }
+
+/*# sourceMappingURL=main.css.map */

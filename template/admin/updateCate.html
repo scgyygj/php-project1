@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<div class="panel">
+    <form action="updateCate.php" method="post">
+        <!--下拉框-->
+        <div class="forngroup">
+            <label for="">父级栏目</label>
+            <!--父栏目的id-->
+            <select name="pid" id="" value="<?php echo $cid?>">
+                <?php echo $lanmu?>
+            </select>
+        </div>
+        <div class="forngroup">
+            <label for="">栏目名称</label>
+            <input type="text" name="cname" placeholder="栏目名称" value="<?php echo $cname;?>">
+        </div>
+        <div class="forngroup">
+            <label for="">栏目id</label>
+            <input type="hidden" name="cid" placeholder="栏目id" value="<?php echo $cid;?>">
+        </div>
+        <div class="forngroup">
+            <input type="submit" name="sub" value="提交">
+        </div>
+    </form>
+</div>
+</body>
+</html>
